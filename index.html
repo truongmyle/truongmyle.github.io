@@ -1,0 +1,56 @@
+html_content = """
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\">
+  <title>TRUONG MY LE THE ANALYST</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 120px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 40px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <h1>TRUONG MY LE THE ANALYST PORTFOLIO</h1>
+  <p>Data analyst skilled in SQL, Python, and Power BI. @TruongMyLe</p>
+  <a class=\"button\" href=\"https://github.com/truongmyle\" target=\"_blank\">TRUONG MY LE THE ANALYST</a>
+</body>
+</html>
+"""
+
+# Save the HTML content to a file
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("File index.html đã được tạo thành công với tên Truong My Le.")
