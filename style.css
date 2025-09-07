@@ -1,22 +1,54 @@
-
-.project {
+style_css = '''
+.project-card {
   background-color: #ffffff;
-  padding: 40px 20px;
-  margin: 30px auto;
+  border-left: 6px solid #2a5298;
+  padding: 30px;
+  margin: 40px auto;
   max-width: 800px;
-  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
 }
 
-.project h1 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.project p {
+.project-header h2 {
+  font-size: 24px;
+  color: #2a5298;
+  margin: 0;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: #2a5298;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.project-card p {
+  margin-top: 20px;
   font-size: 16px;
+  color: #333;
   line-height: 1.6;
-  color: #555;
 }
+
+.project-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.project-table th, .project-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.project-table th {
+  background-color: #f0f4f8;
+  color: #2a5298;
+}
+'''
