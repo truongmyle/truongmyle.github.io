@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TRUONG MY LE THE ANALYST</title>
+  <title>TRUONG MY LE — The Analyst</title>
   <style>
     body {
       margin: 0;
@@ -32,19 +33,35 @@
       line-height: 1.6;
     }
 
+    /* --- PROJECTS SECTION --- */
     section#projects {
+      position: relative; /* Để title-box bám vào */
       padding: 60px 20px;
-      background: linear-gradient(to right, #f8bbd0, #e0f2f1);
+      background: #f0f0f0;
+    }
+
+    .title-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      padding: 12px 24px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #000;
+      border-radius: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .project-box {
+      margin-top: 50px; /* chừa chỗ cho title-box */
       max-width: 900px;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #ffffff;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      position: relative; /* để title-box bám đúng khung */
     }
 
     .project-box h3 {
@@ -80,20 +97,6 @@
     .project-box a.button:hover {
       background-color: #004d40;
     }
-
-    /* 🔹 Box góc trên trái */
-    .title-box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #ffffff;
-      padding: 10px 20px;
-      font-weight: bold;
-      font-size: 18px;
-      color: #004d40;
-      border-radius: 12px 0 12px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
   </style>
 </head>
 <body>
@@ -107,10 +110,10 @@
       @TruongMyLe
     </p>
   </header>
-
+  
   <section id="projects">
+    <div class="title-box">PROJECTS</div>
     <div class="project-box">
-      <div class="title-box">🚀 Projects</div>
       <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
       <p>
         Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
@@ -118,7 +121,4 @@
       <img src="ecommerce_project.jpg" alt="E-commerce Project">
       <a href="https://github.com/TruongMyLe?tab=repositories" target="_blank" class="button">VIEW PROJECT</a>
     </div>
-  </section>
-
-</body>
-</html>
+  </sectio
