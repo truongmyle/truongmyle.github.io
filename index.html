@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TRUONG MY LE — The Analyst</title>
+  <title>TRUONG MY LE THE ANALYST</title>
   <style>
     body {
       margin: 0;
@@ -33,31 +33,43 @@
       line-height: 1.6;
     }
 
-    /* --- PROJECTS SECTION --- */
+    /* PHẦN PROJECTS */
     section#projects {
-      position: relative; /* Để title-box bám vào */
-      padding: 60px 20px;
-      background: #f0f0f0;
+      position: relative;
+      padding: 0;
+      background: #2e2e2e; /* nền đậm nổi bật */
+    }
+
+    .projects-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #d9d9d9; /* thanh ngang sáng */
+      padding: 16px 24px;
     }
 
     .title-box {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #ffffff;
-      padding: 12px 24px;
       font-weight: bold;
       font-size: 16px;
       color: #000;
-      border-radius: 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      letter-spacing: 1px;
+    }
+
+    .social-icons a {
+      margin-left: 16px;
+      color: #000;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #00695c;
     }
 
     .project-box {
-      margin-top: 50px; /* chừa chỗ cho title-box */
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 40px auto;
       background-color: #ffffff;
       padding: 30px;
       border-radius: 12px;
@@ -110,15 +122,29 @@
       @TruongMyLe
     </p>
   </header>
-  
+
+  <!-- PHẦN PROJECTS -->
   <section id="projects">
-    <div class="title-box">PROJECTS</div>
+    <div class="projects-bar">
+      <div class="title-box">PROJECTS</div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank">in</a>
+        <a href="https://github.com/TruongMyLe" target="_blank">GH</a>
+      </div>
+    </div>
+
     <div class="project-box">
       <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
       <p>
-        Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
+        Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. 
+        Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. 
+        Calculated analytics metrics, and conducted user behavior analysis, 
+        and e-commerce performance to optimize strategies.
       </p>
       <img src="ecommerce_project.jpg" alt="E-commerce Project">
       <a href="https://github.com/TruongMyLe?tab=repositories" target="_blank" class="button">VIEW PROJECT</a>
     </div>
-  </sectio
+  </section>
+
+</body>
+</html>
