@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0f2f1, #f8bbd0); /* nền hồng đậm hơn */
+      background: linear-gradient(to right, #e0f2f1, #f8bbd0);
       color: #333;
     }
 
@@ -34,7 +35,7 @@
 
     section#projects {
       padding: 60px 20px;
-      background: linear-gradient(to right, #f8bbd0, #e0f2f1); /* nối tiếp màu nền */
+      background: linear-gradient(to right, #f8bbd0, #e0f2f1);
     }
 
     section#projects h2 {
@@ -64,6 +65,28 @@
       color: #5d4037;
       line-height: 1.8;
     }
+
+    .project-box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .project-box a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00695c;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-box a.button:hover {
+      background-color: #004d40;
+    }
   </style>
 </head>
 <body>
@@ -71,20 +94,22 @@
   <header>
     <h1>TRUONG MY LE — The Analyst Portfolio</h1>
     <p>
-      Data analyst skilled in <span style="color:#6a1b9a; font-weight:bold;">SQL</span>, 
-      <span style="color:#283593; font-weight:bold;">Python</span>, and 
-      <span style="color:#00897b; font-weight:bold;">Power BI</span>.  
-      <br>@TruongMyLe
+      Data analyst skilled in <span style="color:#6a1b9a; font-weight:bold;">SQL</span>,
+      <span style="color:#283593; font-weight:bold;">Python</span>, and
+      <span style="color:#00897b; font-weight:bold;">Power BI</span>.<br>
+      @TruongMyLe
     </p>
   </header>
 
   <section id="projects">
     <h2>🚀 Projects</h2>
     <div class="project-box">
+      <img src="ecommerce_project.jpg" alt="E-commerce Project">
       <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
       <p>
         Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
       </p>
+      <a href="https://github.com/TruongMyLe/ecommerce-project" target="_blank" class="button">VIEW PROJECT</a>
     </div>
   </section>
 
