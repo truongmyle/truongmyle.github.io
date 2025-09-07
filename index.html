@@ -4,67 +4,89 @@
   <title>TRUONG MY LE THE ANALYST</title>
   <style>
     body {
-      background: linear-gradient(to right, #e0f2f1, #f8bbd0); /* màu hồng đậm hơn */
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 120px 20px;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f2f1, #f8bbd0); /* nền hồng đậm hơn */
       color: #333;
     }
 
-    h1 {
+    header {
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+
+    header h1 {
       font-size: 36px;
-      color: #004d40; /* xanh rêu đậm */
+      color: #004d40;
       font-weight: bold;
       margin-bottom: 20px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
     }
 
-    p {
+    header p {
       font-size: 20px;
-      color: #5d4037; /* nâu nhẹ */
+      color: #5d4037;
       font-weight: normal;
-      margin-bottom: 40px;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
       line-height: 1.6;
     }
 
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #00695c;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+    section#projects {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #f8bbd0, #e0f2f1); /* nối tiếp màu nền */
     }
 
-    a.button:hover {
-      background-color: #004d40;
+    section#projects h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004d40;
+      margin-bottom: 40px;
+    }
+
+    .project-box {
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-box h3 {
+      font-size: 24px;
+      color: #00695c;
+      margin-bottom: 15px;
+    }
+
+    .project-box p {
+      font-size: 17px;
+      color: #5d4037;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
-  <h1>TRUONG MY LE — The Analyst Portfolio</h1>
-  <p>
-    Data analyst skilled in <span style="color:#6a1b9a; font-weight:bold;">SQL</span>, 
-    <span style="color:#283593; font-weight:bold;">Python</span>, and 
-    <span style="color:#00897b; font-weight:bold;">Power BI</span>.  
-    <br>@TruongMyLe
-  </p>
-</body>
-  
-<section id="projects" style="padding: 60px 20px; background: linear-gradient(to right, #f8bbd0, #e0f2f1); font-family: 'Segoe UI', sans-serif;">
-  <h2 style="text-align: center; font-size: 32px; color: #004d40; margin-bottom: 40px;">🚀 Projects</h2>
 
-  <div style="max-width: 900px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <h3 style="font-size: 24px; color: #00695c; margin-bottom: 15px;">🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
-    <p style="font-size: 17px; color: #5d4037; line-height: 1.8;">
-      Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
+  <header>
+    <h1>TRUONG MY LE — The Analyst Portfolio</h1>
+    <p>
+      Data analyst skilled in <span style="color:#6a1b9a; font-weight:bold;">SQL</span>, 
+      <span style="color:#283593; font-weight:bold;">Python</span>, and 
+      <span style="color:#00897b; font-weight:bold;">Power BI</span>.  
+      <br>@TruongMyLe
     </p>
-  </div>
-</section>
+  </header>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project-box">
+      <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
+      <p>
+        Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
+      </p>
+    </div>
+  </section>
+
+</body>
 </html>
