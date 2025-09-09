@@ -37,19 +37,17 @@
       background: linear-gradient(to right, #f8bbd0, #e0f2f1);
     }
 
-    /* Project Box */
     .project-box {
       max-width: 900px;
       margin: auto;
-      background-color: #ffffff;   /* box trắng */
+      background-color: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;            /* để title-box ăn theo bo tròn */
+      overflow: hidden;
     }
 
-    /* Thanh tiêu đề Projects */
     .title-box {
-      background: #e91e63;   /* màu hồng nổi bật */
+      background: #e91e63;
       color: #fff;
       font-weight: bold;
       font-size: 16px;
@@ -62,28 +60,40 @@
       padding: 30px;
     }
 
-    .project-content h3 {
-      font-size: 24px;
+    .project-item {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ddd; /* gạch ngang chia */
+    }
+
+    .project-item:last-child {
+      border-bottom: none; /* bỏ gạch ở cuối */
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-item h3 {
+      font-size: 22px;
       color: #00695c;
       margin-bottom: 15px;
     }
 
-    .project-content p {
-      font-size: 17px;
+    .project-item p {
+      font-size: 16px;
       color: #5d4037;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
-    .project-content img {
+    .project-item img {
       width: 100%;
       border-radius: 8px;
       margin: 20px 0;
     }
 
-    .project-content a.button {
+    .project-item a.button {
       display: inline-block;
       margin-top: 10px;
-      padding: 12px 24px;
+      padding: 10px 20px;
       background-color: #00695c;
       color: #ffffff;
       text-decoration: none;
@@ -92,7 +102,7 @@
       transition: background-color 0.3s ease;
     }
 
-    .project-content a.button:hover {
+    .project-item a.button:hover {
       background-color: #004d40;
     }
   </style>
@@ -113,70 +123,52 @@
     <div class="project-box">
       <div class="title-box">🚀 PROJECTS</div>
       <div class="project-content">
-        <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
-        <p>
-          Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
-          <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. 
-          Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance 
-          to optimize strategies.
-        </p>
-        <img src="ecommerce_project.jpg" alt="E-commerce Project">
-        <a class="button" href="https://github.com/TruongMyLe?tab=repositories" target="_blank">VIEW PROJECT</a>
+
+        <!-- Project 1 -->
+        <div class="project-item">
+          <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
+          <p>
+            Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
+            <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. 
+            Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance 
+            to optimize strategies.
+          </p>
+          <img src="ecommerce_project.jpg" alt="E-commerce Project">
+          <a class="button" href="https://github.com/TruongMyLe?tab=repositories" target="_blank">VIEW PROJECT</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+          <h3>📊 CUSTOMER SEGMENTATION WITH RFM ANALYSIS (POWER BI)</h3>
+          <p>
+            <strong>Recency:</strong> Time since last activity.<br>
+            <strong>Frequency:</strong> Total number of transactions or engagements.<br>
+            <strong>Monetary:</strong> Customer purchasing power or total value.
+          </p>
+          <p>
+            Implemented RFM analysis for customer segmentation, using DAX in Power BI to create 
+            dimension tables and dashboards. Classified customers into groups and developed retention strategies.
+          </p>
+          <a class="button" href="https://github.com/TruongMyLe/RFM-Segmentation" target="_blank">VIEW PROJECT</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+          <h3>🔍 CUSTOMER CHURN ANALYSIS WITH CLASSIFICATION MODELS (PYTHON)</h3>
+          <p>
+            Processed missing values, encoded categorical variables, and scaled features. 
+            Analyzed feature importance using a Decision Tree and visualized correlations with churn.
+          </p>
+          <p>
+            Identified <strong>Random Forest</strong> as the best model with over 95% accuracy. 
+            Built predictive dashboards and churn probability scores to support business decisions.
+          </p>
+          <a class="button" href="https://github.com/TruongMyLe/Customer-Churn" target="_blank">VIEW PROJECT</a>
+        </div>
+
       </div>
     </div>
   </section>
-
-</body>
-</html>
-
-
-<div style="flex: 1; min-width: 280px;">
-        <h3>📊 CUSTOMER SEGMENTATION WITH RFM ANALYSIS (POWER BI)</h3>
-        <p>
-          <strong>Recency:</strong> The freshness of the customer activity, be it purchases or visits. E.g., Time since last or last engaged with the product.<br>
-          <strong>Frequency:</strong> The frequency of the customer transactions or visits. E.g., Total number of transactions or average time between transactions/engaged visits.<br>
-          <strong>Monetary:</strong> The intention of customer to spend or purchasing power of customer. E.g., Total or average transaction value.
-        </p>
-        <p>
-          Implemented indicators based on Design Thinking principles. Utilized RFM analysis for customer segmentation, using DAX functions in Power BI to create dimension tables and interactive dashboards. Classified customers into groups and developed retention strategies.
-        </p>
-        <div class="button-container">
-          https://github.com/TruongMyLe/RFM-SegmentationVIEW PROJECT</a>
-        </div>
-      </div>
-
-<div style="flex: 1; min-width: 280px;">
-        <h3>📊 CUSTOMER SEGMENTATION WITH RFM ANALYSIS (POWER BI)</h3>
-        <p>
-          <strong>Recency:</strong> The freshness of the customer activity, be it purchases or visits. E.g., Time since last or last engaged with the product.<br>
-          <strong>Frequency:</strong> The frequency of the customer transactions or visits. E.g., Total number of transactions or average time between transactions/engaged visits.<br>
-          <strong>Monetary:</strong> The intention of customer to spend or purchasing power of customer. E.g., Total or average transaction value.
-        </p>
-        <p>
-          Implemented indicators based on Design Thinking principles. Utilized RFM analysis for customer segmentation, using DAX functions in Power BI to create dimension tables and interactive dashboards. Classified customers into groups and developed retention strategies.
-        </p>
-        <div class="button-container">
-          https://github.com/TruongMyLe/RFM-SegmentationVIEW PROJECT</a>
-        </div>
-      </div>
-
-      <!-- Dự án 2: Churn Analysis -->
-      <div style="flex: 1; min-width: 280px;">
-        <h3>🔍 CUSTOMER CHURN ANALYSIS WITH CLASSIFICATION MODELS (PYTHON)</h3>
-        <p>
-          Data Handling and Cleaning: Managed missing values, encoded categorical variables, and scaled features. Analyzed feature importance using a Decision Tree and visualized correlations with customer churn.
-        </p>
-        <p>
-          Identified <strong>Random Forest</strong> as the best model with over 95% accuracy. Built predictive dashboards and churn probability scores to support business decisions.
-        </p>
-        <div class="button-container">
-          https://github.com/TruongMyLe/Customer-ChurnVIEW PROJECT</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 </body>
 </html>
