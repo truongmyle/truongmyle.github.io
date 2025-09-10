@@ -1,9 +1,7 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TRUONG MY LE — The Analyst Portfolio</title>
+  <title>TRUONG MY LE THE ANALYST</title>
   <style>
     body {
       margin: 0;
@@ -39,64 +37,100 @@
       background: linear-gradient(to right, #f8bbd0, #e0f2f1);
     }
 
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1200px;
+    /* Project Box */
+    .project-box {
+      max-width: 1100px;
       margin: auto;
-    }
-
-    .project-item {
-      flex: 1 1 calc(50% - 30px);
-      background: #fff;
+      background-color: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
-      box-sizing: border-box;
+      overflow: hidden;
+      margin-bottom: 40px;
     }
 
-    .project-item h3 {
+    .title-box {
+      background: #e91e63;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 14px 30px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+
+    .project-content {
+      padding: 30px;
+    }
+
+    .project-content h3 {
       font-size: 22px;
       color: #00695c;
       margin-bottom: 15px;
     }
 
-    .project-item p {
+    .project-content p {
       font-size: 16px;
       color: #5d4037;
       line-height: 1.7;
     }
 
-    .project-item img {
+    .project-content img {
       width: 100%;
       border-radius: 8px;
       margin: 20px 0;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: transparent;
-      color: #00695c !important;
-      border: 2px solid #00695c;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: all 0.3s ease;
+   .project-content {
+  padding: 30px;
+  text-align: center; /* căn giữa nút */
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: transparent;   /* nền trong suốt */
+  color: #00695c !important;       /* chữ xanh */
+  border: 2px solid #00695c;       /* viền xanh */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00695c; /* khi hover nền xanh */
+  color: #fff !important;    /* chữ trắng */
+}
+
+    /* 2 project ngang hàng */
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
     }
 
-    .button:hover {
-      background-color: #00695c;
-      color: #fff !important;
+    .project-item {
+      flex: 1;
+      min-width: 320px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
-    @media (max-width: 768px) {
-      .project-item {
-        flex: 1 1 100%;
-      }
+    .project-item h3 {
+      font-size: 20px;
+      color: #00695c;
+      margin-bottom: 10px;
     }
+
+    .divider {
+      border-top: 2px solid #eee;
+      margin: 0 30px;
+    }
+
   </style>
 </head>
 <body>
@@ -111,11 +145,12 @@
     </p>
   </header>
 
+  <!-- Project 1 -->
   <section id="projects">
-    <div class="project-grid">
-
-      <!-- Project bên trái -->
-      <div class="project-item">
+    <div class="project-box">
+      <div class="title-box">PROJECTS</div>
+      <div class="project-content">
+        <div class="container">
         <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
         <p>
           Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
@@ -123,15 +158,46 @@
           Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance 
           to optimize strategies.
         </p>
-        ecommerce_project.jpg
-        https://github.com/TruongMyLe?tab=repositoriesVIEW PROJECT</a>
+        <img src="ecommerce_project.jpg" alt="E-commerce Project">
+        <a class="button" href="https://github.com/TruongMyLe?tab=repositories" target="_blank">VIEW PROJECT</a>
       </div>
+    </div>
 
-      <!-- Project bên phải -->
-      <div class="project-item">
-        <h3>📈 SALES FORECASTING WITH TIME SERIES (PYTHON)</h3>
-        <p>
-          Applied ARIMA and Prophet models to forecast future sales trends. Cleaned and transformed time series data, visualized seasonality and trends, and evaluated model performance using RMSE and MAE.
-        </p>
-        <img src="sales_forecasting   <a class="button" href="https://github.com/TruongMyLe/Sales-Forecasting" target="_blank</body>
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Projects 2 & 3 side by side -->
+    <div class="project-box">
+      <div class="project-grid">
+        
+        <div class="project-item">
+          <h3>📊 CUSTOMER SEGMENTATION WITH RFM ANALYSIS (POWER BI)</h3>
+          <p>
+            <strong>Recency:</strong> The freshness of the customer activity.<br>
+            <strong>Frequency:</strong> The frequency of transactions.<br>
+            <strong>Monetary:</strong> The customer purchasing power.
+          </p>
+          <p>
+            Implemented indicators based on Design Thinking principles. Utilized RFM analysis for customer segmentation, using DAX functions in Power BI to create dimension tables and interactive dashboards. Classified customers into groups and developed retention strategies.
+          </p>
+          <a class="button" href="https://github.com/TruongMyLe/RFM-Segmentation" target="_blank">VIEW PROJECT</a>
+        </div>
+
+        <div class="project-item">
+          <h3>🔍 CUSTOMER CHURN ANALYSIS WITH CLASSIFICATION MODELS (PYTHON)</h3>
+          <p>
+            Data Handling and Cleaning: Managed missing values, encoded categorical variables, and scaled features. Analyzed feature importance using a Decision Tree and visualized correlations with customer churn.
+          </p>
+          <p>
+            Identified <strong>Random Forest</strong> as the best model with over 95% accuracy. Built predictive dashboards and churn probability scores to support business decisions.
+          </p>
+          <a class="button" href="https://github.com/TruongMyLe/Customer-Churn" target="_blank">VIEW PROJECT</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
 </html>
