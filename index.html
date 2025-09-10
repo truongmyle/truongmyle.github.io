@@ -39,27 +39,46 @@
       background: linear-gradient(to right, #f8bbd0, #e0f2f1);
     }
 
-    .project-grid {
+    .project-box {
+      max-width: 1100px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    .title-box {
+      background: #e91e63;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 14px 30px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+
+    .project-content {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      max-width: 1200px;
-      margin: auto;
+      padding: 30px;
     }
 
     .project-item {
-      flex: 1 1 calc(50% - 30px);
+      flex: 1 1 calc(50% - 15px);
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       box-sizing: border-box;
     }
 
     .project-item h3 {
-      font-size: 22px;
+      font-size: 20px;
       color: #00695c;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .project-item p {
@@ -113,31 +132,34 @@
   </header>
 
   <section id="projects">
-    <div class="project-grid">
+    <div class="project-box">
+      <div class="title-box">PROJECTS</div>
+      <div class="project-content">
 
-      <!-- Project 1 bên trái -->
-      <div class="project-item">
-        <h3> DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
-        <p>
-          Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
-          <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. 
-          Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance 
-          to optimize strategies.
-        </p>
-        <img src="UploadedImage1.jpg" alt="E-commerce Project">
-        <a class="button" href="https://github.com/TruongMyLe?tab=repositories" target="_blank">VIEW PROJECT</a>
+        <!-- Project 1 bên trái -->
+        <div class="project-item">
+          <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
+          <p>
+            Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
+            <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. 
+            Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance 
+            to optimize strategies.
+          </p>
+          ecommerce_project.jpg
+          https://github.com/TruongMyLe?tab=repositoriesVIEW PROJECT</a>
+        </div>
+
+        <!-- Project 2 bên phải -->
+        <div class="project-item">
+          <h3>📈 SALES FORECASTING WITH TIME SERIES (PYTHON)</h3>
+          <p>
+            Applied ARIMA and Prophet models to forecast future sales trends. Cleaned and transformed time series data, visualized seasonality and trends, and evaluated model performance using RMSE and MAE.
+          </p>
+          sales_forecasting.jpg
+          https://github.com/TruongMyLe/Sales-ForecastingVIEW PROJECT</a>
+        </div>
+
       </div>
-
-      <!-- Project 2 bên phải -->
-      <div class="project-item">
-        <h3> SALES FORECASTING WITH TIME SERIES (PYTHON)</h3>
-        <p>
-          Applied ARIMA and Prophet models to forecast future sales trends. Cleaned and transformed time series data, visualized seasonality and trends, and evaluated model performance using RMSE and MAE.
-        </p>
-        <img src="UploadedImage0.jpg" alt="Sales Forecasting Project">
-        <a class="button" href="https://github.com/TruongMyLe/Sales-Forecasting" target="_blank">VIEW PROJECT</a>
-      </div>
-
     </div>
   </section>
 
