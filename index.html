@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>TRUONG MY LE — The Analyst Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -61,57 +60,50 @@
     }
 
     .project-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-      gap: 30px;
+      display: flex;
+      justify-content: space-between;
       padding: 30px;
     }
 
     .project-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      width: 48%;
       background: #fff;
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       box-sizing: border-box;
-      height: 100%;
-    }
-
-    .project-item h3,
-    .project-item p,
-    .project-item img,
-    .project-item .button {
-      width: 100%;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .project-item h3 {
       font-size: 20px;
       color: #00695c;
       margin-bottom: 15px;
+      text-align: center;
     }
 
     .project-item p {
       font-size: 16px;
       color: #5d4037;
       line-height: 1.7;
-      margin-bottom: 20px;
       text-align: justify;
+      margin-bottom: 20px;
+      min-height: 120px;
     }
 
     .project-item img {
-      max-width: 100%;
+      width: 100%;
+      max-width: 360px;
       height: auto;
       border-radius: 8px;
-      margin: 20px 0;
+      margin-bottom: 20px;
     }
 
     .button {
       display: block;
-      margin-top: auto;
+      margin: 0 auto;
       padding: 12px 24px;
       background-color: transparent;
       color: #00695c !important;
@@ -131,7 +123,12 @@
 
     @media (max-width: 768px) {
       .project-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-item {
+        width: 100%;
+        margin-bottom: 30px;
       }
     }
   </style>
@@ -155,24 +152,22 @@
 
         <!-- Project 1 -->
         <div class="project-item">
-          <h3>🛒 DATA ANALYSIS FOR E-COMMERCE (SQL IN BIGQUERY)</h3>
+          <h3>🛒 ECOMMERCE USER BEHAVIOR & SALES PERFORMANCE ANALYSIS (SQL IN BIGQUERY)</h3>
           <p>
-            Utilized <strong>BigQuery</strong> for EDA and Data Mining on datasets. Developed 
-            <strong>SQL queries</strong> to aggregate, transform, filter, and extract insights. Calculated analytics metrics, and conducted user behavior analysis, and e-commerce performance to optimize strategies.
+            This project utilizes the public Google Analytics eCommerce dataset to analyze user behavior and sales performance. Using SQL in Google BigQuery, it explores session-level data to uncover insights into how users interact with the website and what drives conversions.
           </p>
-          <img src="ecommerce_project.jpg" alt="E-commerce Project">
+          <img src="UploadedImage8.jpg" alt="E-commerce Project">
           <a class="button" href="https://github.com/TruongMyLe?tab=repositories" target="_blank">VIEW PROJECT</a>
         </div>
 
         <!-- Project 2 -->
         <div class="project-item">
-          <h3>📊 SUPERSTORE SALES & EXPANSION STRATEGY ANALYSIS (Power BI)</h3>         
-<p>
-  This project explores the Global Superstore dataset to evaluate sales performance and identify strategic opportunities for expansion. It combines data from orders, sales personnel, and returns to uncover high-potential markets and top-performing product categories. Key questions include: Which markets show the strongest growth potential? And which categories drive the most value across regions?
-</p>
-
-          <img src="UploadedImage0.jpg" alt="Sales Forecasting Project">
-          <a class="button" href="https://github.com/TruongMyLe/Sales-Forecasting" target="_blank">VIEW PROJECT</a>
+          <h3>📊 SUPERSTORE SALES & EXPANSION STRATEGY ANALYSIS (POWER BI)</h3>
+          <p>
+            This project explores the Global Superstore dataset to evaluate sales performance and identify strategic opportunities for expansion. It combines data from orders, sales personnel, and returns to uncover high-potential markets and top-performing product categories. Key questions include: Which markets show the strongest growth potential? And which categories drive the most value across regions?
+          </p>
+          <img src="RandomFileName_6b6a9ce0-9a5f-45df-8a79-6b4d3bd809b9.png" alt="Power BI Superstore Project">
+          <a class="button" href="https://github.com/TruongMyLe/Superstore-Expansion" target="_blank">VIEW PROJECT</a>
         </div>
 
       </div>
