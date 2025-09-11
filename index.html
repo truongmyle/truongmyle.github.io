@@ -62,11 +62,13 @@
     .project-content {
       display: flex;
       justify-content: space-between;
+      align-items: stretch;
       padding: 30px;
+      gap: 20px;
     }
 
     .project-item {
-      width: 48%;
+      flex: 1;
       background: #fff;
       border-radius: 8px;
       padding: 20px;
@@ -74,6 +76,7 @@
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
     }
 
@@ -90,7 +93,7 @@
       line-height: 1.7;
       text-align: justify;
       margin-bottom: 20px;
-      min-height: 120px;
+      flex-grow: 1;
     }
 
     .project-item img {
@@ -153,10 +156,9 @@
         <!-- Project 1 -->
         <div class="project-item">
           <h3>🛒 ECOMMERCE USER BEHAVIOR & SALES PERFORMANCE ANALYSIS (SQL IN BIGQUERY)</h3>      
-<p>
-  This project analyzes user behavior and sales performance using the public Google Analytics eCommerce dataset. Leveraging SQL in BigQuery, it focuses on session-level data to uncover patterns in user interactions, identify conversion drivers, and evaluate the effectiveness of marketing strategies across different segments.
-</p>
-
+          <p>
+            This project analyzes user behavior and sales performance using the public Google Analytics eCommerce dataset. Leveraging SQL in BigQuery, it focuses on session-level data to uncover patterns in user interactions, identify conversion drivers, and evaluate the effectiveness of marketing strategies across different segments.
+          </p>
           <img src="ecommerce_project.jpg" alt="E-commerce Project">
           <a class="button" href="https://github.com/truongmyle/SQL_eCommerce_Dataset" target="_blank">VIEW PROJECT</a>
         </div>
