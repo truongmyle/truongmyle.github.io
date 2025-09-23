@@ -12,12 +12,10 @@
       background: linear-gradient(to right, #e0f2f1, #f8bbd0);
       color: #333;
     }
-
     header {
       text-align: center;
       padding: 120px 20px 60px;
     }
-
     header h1 {
       font-size: 36px;
       color: #004d40;
@@ -25,119 +23,6 @@
       margin-bottom: 20px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
     }
-
-    header p {
-      font-size: 20px;
-      color: #5d4037;
-      font-weight: normal;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.6;
-      text-align: justify;
-    }
-
-    section#projects {
-      padding: 60px 20px;
-      background: linear-gradient(to right, #f8bbd0, #e0f2f1);
-    }
-
-    .project-box {
-      max-width: 1100px;
-      margin: auto;
-      background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      margin-bottom: 40px;
-    }
-
-    .title-box {
-      background: #e91e63;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      padding: 14px 30px;
-      letter-spacing: 1px;
-      text-align: left;
-    }
-
-    .project-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      padding: 30px;
-      gap: 20px;
-    }
-
-    .project-item {
-      flex: 1;
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .project-item h3 {
-      font-size: 20px;
-      color: #00695c;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    .project-item p {
-      font-size: 16px;
-      color: #5d4037;
-      line-height: 1.7;
-      text-align: justify;
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-
-    .project-item img {
-      width: 100%;
-      max-width: 360px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      display: block;
-      margin: 0 auto;
-      padding: 12px 24px;
-      background-color: transparent;
-      color: #00695c !important;
-      border: 2px solid #00695c;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-      text-align: center;
-      width: fit-content;
-    }
-
-    .button:hover {
-      background-color: #00695c;
-      color: #fff !important;
-    }
-
-    @media (max-width: 768px) {
-      .project-content {
-        flex-direction: column;
-        align-items: center;
-      }
-      .project-item {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
-  
-    strong, span[style] { white-space: nowrap; }
     header p {
       font-size: 20px;
       color: #5d4037;
@@ -148,10 +33,91 @@
       text-align: justify;
       text-justify: inter-word;
     }
-    strong, span[style] {
-      white-space: normal;
+    section#projects {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #f8bbd0, #e0f2f1);
     }
-    </style>
+    .project-box {
+      max-width: 1100px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .title-box {
+      background: #e91e63;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 14px 30px;
+      letter-spacing: 1px;
+      text-align: left;
+    }
+    .project-content {
+      display: flex;
+      gap: 40px;
+      padding: 30px;
+    }
+    .left-column, .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .project-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-item h3 {
+      font-size: 20px;
+      color: #00695c;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .project-item p {
+      font-size: 16px;
+      color: #5d4037;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+    .project-item img {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .button {
+      padding: 12px 24px;
+      background-color: transparent;
+      color: #00695c !important;
+      border: 2px solid #00695c;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .button:hover {
+      background-color: #00695c;
+      color: #fff !important;
+    }
+    @media (max-width: 768px) {
+      .project-content {
+        flex-direction: column;
+      }
+    }
+  
+    .project-content { display: flex; gap: 40px; padding: 30px; }
+    .left-column, .right-column { flex: 1; display: flex; flex-direction: column; gap: 30px; }</style>
 </head>
 <body>
 <header>
@@ -163,26 +129,26 @@
 <section id="projects">
 <div class="project-box">
 <div class="title-box">PROJECTS</div>
-<div class="project-content">
-<!-- Project 1 -->
-<div class="project-item">
+<div class="project-content"><div class="left-column"><div class="project-item">
 <h3>🛒 ECOMMERCE USER BEHAVIOR &amp; SALES PERFORMANCE ANALYSIS (SQL IN BIGQUERY)</h3>
 <p>
-            This project analyzes user behavior and sales performance using the public Google Analytics eCommerce dataset. Leveraging SQL in BigQuery, it focuses on session-level data to uncover patterns in user interactions, identify conversion drivers, and evaluate the effectiveness of marketing strategies across different segments.
-          </p>
+              This project analyzes user behavior and sales performance using the public Google Analytics eCommerce dataset. Leveraging SQL in BigQuery, it focuses on session-level data to uncover patterns in user interactions and evaluate marketing strategies.
+            </p>
 <img alt="E-commerce Project" src="ecommerce_project.jpg"/>
 <a class="button" href="https://github.com/truongmyle/SQL_eCommerce_Dataset" target="_blank">VIEW PROJECT</a>
-</div>
-<!-- Project 2 -->
-<div class="project-item">
+</div><div class="project-item">
 <h3>📊 SUPERSTORE SALES &amp; EXPANSION STRATEGY ANALYSIS (POWER BI)</h3>
 <p>
-            This project explores the Global Superstore dataset to evaluate sales performance and identify strategic opportunities for expansion. It combines data from orders, sales personnel, and returns to uncover high-potential markets and top-performing product categories. Key questions include: Which markets show the strongest growth potential? And which categories drive the most value across regions?
-          </p>
+              This project analyzes marketing campaign performance across channels and regions. It focuses on optimizing budget allocation and identifying underperforming campaigns.
+            </p>
+<img alt="Marketing Campaign Analysis" src="image.png"/>
+<a class="button" href="https://github.com/truongmyle/Power-BI_Marketing-Campaign-Analysis" target="_blank">VIEW PROJECT</a>
+</div></div><div class="right-column"><div class="project-item">
+<h3>📈 MARKETING CAMPAIGN ANALYSIS (POWER BI)</h3>
+<p>This project analyzes marketing campaign performance across channels and regions. It focuses on optimizing budget allocation and identifying underperforming campaigns.</p>
 <img alt="Power BI Superstore Project" src="superstore_promotion.jpg"/>
 <a class="button" href="https://github.com/truongmyle/Power-BI_Superstore-Sales-and-Expansion-Strategy-Analysis" target="_blank">VIEW PROJECT</a>
-</div>
-</div>
+</div></div></div>
 </div>
 </section>
 </body>
