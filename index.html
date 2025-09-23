@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TRUONG MY LE — The Analyst Portfolio</title>
-  <style>
+<meta charset="utf-8"/>
+<title>TRUONG MY LE — The Analyst Portfolio</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -29,9 +30,10 @@
       font-size: 20px;
       color: #5d4037;
       font-weight: normal;
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
       line-height: 1.6;
+      text-align: justify;
     }
 
     section#projects {
@@ -134,48 +136,54 @@
         margin-bottom: 30px;
       }
     }
-  </style>
+  
+    strong, span[style] { white-space: nowrap; }
+    header p {
+      font-size: 20px;
+      color: #5d4037;
+      font-weight: normal;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    strong, span[style] {
+      white-space: normal;
+    }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>TRUONG MY LE — The Analyst Portfolio</h1>
-    <p>
-      Data analyst skilled in <span style="color:#6a1b9a; font-weight:bold;">SQL</span>,
-      <span style="color:#283593; font-weight:bold;">Python</span>, and
-      <span style="color:#00897b; font-weight:bold;">Power BI</span>.<br>
-      @TruongMyLe
+<header>
+<h1>TRUONG MY LE — The Analyst Portfolio</h1>
+<p>
+<strong>I have a background in Economics</strong> and I am pursuing a career in <strong>Data Analysis within e-commerce</strong>. Through personal projects, I’ve explored <span style="color:#6a1b9a; font-weight:bold;">user behavior</span>, <span style="color:#e91e63; font-weight:bold;">marketing performance</span>, and <span style="color:#00897b; font-weight:bold;">sales trends</span> using <strong>SQL</strong> and <strong>Power BI</strong>. I focus on <em>turning data into insights</em> to support <strong>business decisions and growth</strong>.
     </p>
-  </header>
-
-  <section id="projects">
-    <div class="project-box">
-      <div class="title-box">PROJECTS</div>
-      <div class="project-content">
-
-        <!-- Project 1 -->
-        <div class="project-item">
-          <h3>🛒 ECOMMERCE USER BEHAVIOR & SALES PERFORMANCE ANALYSIS (SQL IN BIGQUERY)</h3>      
-          <p>
+</header>
+<section id="projects">
+<div class="project-box">
+<div class="title-box">PROJECTS</div>
+<div class="project-content">
+<!-- Project 1 -->
+<div class="project-item">
+<h3>🛒 ECOMMERCE USER BEHAVIOR &amp; SALES PERFORMANCE ANALYSIS (SQL IN BIGQUERY)</h3>
+<p>
             This project analyzes user behavior and sales performance using the public Google Analytics eCommerce dataset. Leveraging SQL in BigQuery, it focuses on session-level data to uncover patterns in user interactions, identify conversion drivers, and evaluate the effectiveness of marketing strategies across different segments.
           </p>
-          <img src="ecommerce_project.jpg" alt="E-commerce Project">
-          <a class="button" href="https://github.com/truongmyle/SQL_eCommerce_Dataset" target="_blank">VIEW PROJECT</a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-item">
-          <h3>📊 SUPERSTORE SALES & EXPANSION STRATEGY ANALYSIS (POWER BI)</h3>
-          <p>
+<img alt="E-commerce Project" src="ecommerce_project.jpg"/>
+<a class="button" href="https://github.com/truongmyle/SQL_eCommerce_Dataset" target="_blank">VIEW PROJECT</a>
+</div>
+<!-- Project 2 -->
+<div class="project-item">
+<h3>📊 SUPERSTORE SALES &amp; EXPANSION STRATEGY ANALYSIS (POWER BI)</h3>
+<p>
             This project explores the Global Superstore dataset to evaluate sales performance and identify strategic opportunities for expansion. It combines data from orders, sales personnel, and returns to uncover high-potential markets and top-performing product categories. Key questions include: Which markets show the strongest growth potential? And which categories drive the most value across regions?
           </p>
-          <img src="superstore_promotion.jpg" alt="Power BI Superstore Project">
-          <a class="button" href="https://github.com/truongmyle/Power-BI_Superstore-Sales-and-Expansion-Strategy-Analysis" target="_blank">VIEW PROJECT</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+<img alt="Power BI Superstore Project" src="superstore_promotion.jpg"/>
+<a class="button" href="https://github.com/truongmyle/Power-BI_Superstore-Sales-and-Expansion-Strategy-Analysis" target="_blank">VIEW PROJECT</a>
+</div>
+</div>
+</div>
+</section>
 </body>
 </html>
